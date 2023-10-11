@@ -1,0 +1,28 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "browser",
+  "documentRoot": "/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "clientLibrary": "neutralino.js",
+  "nativeAllowList": [
+    "app.*",
+    "filesystem.readDirectory"
+  ],
+  "modes": {
+    "browser": {
+      "title": "notas",
+      "icon": "/web-src/favicon.ico"
+    }
+  },
+  "cli": {
+    "binaryName": "notas",
+    "resourcesPath": "/dist/",
+    "frontendLibrary": {
+      "patchFile": "/web-src/index.html",
+      "devUrl": "http://localhost:1234"
+    }
+  }
+}
