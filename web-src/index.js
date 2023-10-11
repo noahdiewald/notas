@@ -1,5 +1,5 @@
 import '@picocss/pico'
-import { init } from '@neutralinojs/lib'
+import * as Neu from '@neutralinojs/lib'
 import { Elm } from '../src/Main.elm'
 // Design doc helper functions
 import { upsert_dd } from './db.js'
@@ -9,7 +9,8 @@ import { proto_dd } from './design_docs/proto.js'
 // Libraries used for database access and data manipulation.
 import PouchDB from 'pouchdb'
 
-init()
+// This initializes the backend API
+Neu.init()
 
 // Initialize the local database
 const localDB = new PouchDB('notasdb')
