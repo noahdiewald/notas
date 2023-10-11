@@ -15,6 +15,9 @@
     "browser": {
       "title": "notas",
       "icon": "/web-src/favicon.ico"
+    },
+    "window": {
+      "icon": "/web-src/favicon.ico"
     }
   },
   "cli": {
