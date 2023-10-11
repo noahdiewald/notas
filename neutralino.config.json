@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "defaultMode": "browser",
   "documentRoot": "/dist/",
+  "port": 4321,
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
-  "clientLibrary": "neutralino.js",
   "nativeAllowList": [
     "app.*",
     "filesystem.readDirectory"
